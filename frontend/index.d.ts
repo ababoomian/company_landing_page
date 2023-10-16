@@ -1,7 +1,7 @@
 
 declare module '*.png' {
     const value: any;
-    export default value;
+    export default value;``
 }
 
 declare module '*.svg' {

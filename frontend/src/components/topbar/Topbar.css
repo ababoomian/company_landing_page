@@ -1,0 +1,57 @@
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    margin-bottom: 100px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #6365E1 57.82%, rgba(205, 85, 73, 0.00) 64.42%, rgba(73, 74, 205, 0.00) 64.42%);
+}
+.circle p{
+    padding: 44px  25px 22px 31px;
+    color: #FFF;
+}
+
+
+.containerUlLi{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.ulContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.ulContainer li{
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+}
+.button_div{
+    margin-left: 10px;
+
+}
+.button_div button{
+    color: #FFF;
+    font-style: normal;
+    font-weight: 700;
+    width: 150px;
+    line-height: normal;
+    border-radius: 2.431px;
+    border: 0.54px solid #3FE3F3;
+    padding: 4px 20px;
+}
