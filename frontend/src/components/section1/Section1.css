@@ -1,5 +1,7 @@
 
-
+.container{
+    width: 100%;
+}
 .left_side h1{
     color: #FFF;
     font-family: Jost;

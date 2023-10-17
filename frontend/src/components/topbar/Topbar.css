@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    /* background-color: black; */
     margin-bottom: 100px;
 }
 
@@ -51,7 +51,7 @@
     font-weight: 700;
     width: 150px;
     line-height: normal;
-    border-radius: 2.431px;
-    border: 0.54px solid #3FE3F3;
+    background: transparent;
+  border: none;
     padding: 4px 20px;
 }
