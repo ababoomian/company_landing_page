@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+// import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Update from './Update';
+import Calendar from './Calendar';
 
 const NavbarContainer = styled.nav`
   display: flex;
@@ -99,6 +102,8 @@ const MobileMenuButton = styled.button`
     outline: none;
   }
 `;
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import Pricing from './Pricing';
 
 const Navbar: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -117,10 +122,29 @@ const Navbar: React.FC = () => {
             <a href="/">Home</a>
           </NavLink>
           <NavLink>
-            <a href="/about">About</a>
+          <Link
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={Update}
+          >
+            About
+          </Link>
+            {/* <a  onClick={Update}>About</a> */}
           </NavLink>
           <NavLink>
-            <a href="/services">Services</a>
+          <Link
+            activeClass="active"
+            to="pricing"
+            spy={true}
+            smooth={true}
+            duration={800}
+            onClick={Pricing}
+          >
+            Services
+          </Link>
           </NavLink>
           <NavLink>
             <a href="/contact">Contact</a>
