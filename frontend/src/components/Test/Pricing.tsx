@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 function Pricing(props) {
   return (
-    <PricingWrapper>
+    <PricingWrapper id="pricing">
       <Container>
-        <Header>Pricing</Header>
+        <Header >Pricing</Header>
         <Description>
           Most calendars are designed for teams. <br />
           Slate is designed for freelancers

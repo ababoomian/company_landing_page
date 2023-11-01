@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
+import { scroller } from "react-scroll";
+
 
 function Update(props) {
+
+  scroller.scrollTo("about", {
+    duration: 800,
+    delay: 0,
+    smooth: "easeInOutQuart",
+  });
+
   return (
-    <Container>
-      <Content>
-        <TextContainer>
+    <Container >
+      <Content id="about">
+        <TextContainer >
           <Title>Fastest way to organize</Title>
           <Subtitle>
             Most calendars are designed for teams. Slate is designed for

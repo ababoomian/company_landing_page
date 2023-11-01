@@ -21,7 +21,6 @@ function Home() {
     <Contacts/>
     <Service/>
     <Pricing/>
-    <ContactForm/>
     </>
   )
 }
