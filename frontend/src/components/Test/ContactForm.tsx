@@ -37,13 +37,18 @@ const Container = styled.div`
   width: 100%;
   max-width: 1440px;
   flex-direction: column;
-  padding: 203px 20px 102px;
+  padding: 203px 0px;
 
   @media (max-width: 991px) {
     max-width: 100%;
   }
 `;
-
+const Navigation = styled.nav`
+  display: flex;
+  text-align: center;
+  background-color: #fff;
+  width: 100%;
+`
 const Header = styled.div`
   color: var(--text, #252b42);
   text-align: center;
@@ -82,7 +87,8 @@ const FormContainer = styled.div`
   margin-top: 60px;
 
   @media (max-width: 991px) {
-    max-width: 100%;
+    align-items:center;
+    width:100%;
     margin-top: 40px;
   }
 `;
@@ -115,7 +121,7 @@ const FormInput = styled.div`
   padding: 52px 20px;
 
   @media (max-width: 991px) {
-    max-width: 100%;
+    width:400px;
     margin-top: 40px;
   }
 `;
@@ -132,6 +138,7 @@ const InputLabel = styled.div`
 
   @media (max-width: 991px) {
     text-wrap: initial;
+    width:100%;
   }
 `;
 
@@ -151,6 +158,7 @@ const Input = styled.input`
   padding: 19px 20px;
 
   @media (max-width: 991px) {
+    width:80%;
     text-wrap: initial;
     margin-top: 40px;
   }
@@ -169,10 +177,11 @@ const TextArea = styled.textarea`
   border: 1px solid #e8e8e8;
   background-color: #f5f5f5;
   margin-top: 44px;
-  width: 95%;
-  padding: 26px 20px 123px;
+  width: 100%;
+  padding: 26px 0px;
 
   @media (max-width: 991px) {
+    
     text-wrap: initial;
     margin-top: 40px;
     padding-bottom: 10px;

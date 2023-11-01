@@ -39,10 +39,15 @@ const Contact = styled.div`
   width: 100%;
   max-width: 1440px;
   flex-direction: column;
-  padding: 113px 20px 52px;
+  padding: 113px  0px;
 
   @media (max-width: 991px) {
-    max-width: 100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    padding: 113px  0px;
+    flex-direction : column;
+    justify-content:center;
   }
 `;
 
@@ -79,7 +84,7 @@ const Image = styled.img`
   flex-grow: 1;
 
   @media (max-width: 991px) {
-    max-width: 100%;
+    max-width: 400px;
     margin-top: 40px;
   }
 `;
@@ -193,8 +198,9 @@ const EmailInput = styled.div`
   gap: 12px;
 
   @media (max-width: 991px) {
-    max-width: 100%;
+    max-width: 300px;
     flex-wrap: wrap;
+    padding : 0;
   }
 `;
 
@@ -221,6 +227,7 @@ const InputLabel = styled.div`
   @media (max-width: 991px) {
     white-space: initial;
     padding-left: 10px;
+    width:200px;
   }
 `;
 

@@ -1,0 +1,14 @@
+.NavContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    padding: 10px 0px;
+    
+}
+.NavContainer .logo{
+    padding: 0px;
+    
+}
+

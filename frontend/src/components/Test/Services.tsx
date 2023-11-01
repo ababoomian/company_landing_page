@@ -34,7 +34,7 @@ const Services = styled.div`
   width: 100%;
   max-width: 1439px;
   flex-direction: column;
-  padding: 111px 20px 100px;
+  padding: 111px 0px;
 
   @media (max-width: 991px) {
     max-width: 100%;
