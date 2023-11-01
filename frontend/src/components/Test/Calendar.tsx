@@ -49,13 +49,14 @@ function Calendar() {
 }
 
 const Container = styled.div`
+  margin-top: 80px;
   align-items: flex-start;
   align-self: stretch;
   background-color: #fff;
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 0px;
   @media (max-width: 991px) {
     max-width: 100%;
   }
@@ -172,7 +173,6 @@ const FeatureImage2 = styled.img`
   aspect-ratio: 1.79;
   object-fit: cover;
   object-position: center;
-  width: 100%;
   overflow: hidden;
   align-self: stretch;
   margin-top: 132px;
