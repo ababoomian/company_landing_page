@@ -1,0 +1,14 @@
+/* Request for get pricing content 
+ Request endpoint should be:
+ 
+Get  /data/services             Get all services  
+Get  /data/services/:id         Get a service with given id
+Post /data/services/            Create a new service with body content 
+{
+    Id : type : int unique,
+    Name: type : string (Char *)
+    Price : type : string (Char *)
+    desc : type : varchar(50);
+    img:(form data),
+}       
+*/

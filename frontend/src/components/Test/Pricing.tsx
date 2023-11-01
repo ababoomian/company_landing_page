@@ -87,7 +87,7 @@ const PricingWrapper = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding: 100px 20px;
+  padding: 100px 0px;
 
   @media (max-width: 991px) {
     max-width: 100%;
@@ -145,10 +145,12 @@ const PriceContainer = styled.div`
   align-self: stretch;
   margin-top: 90px;
   display: flex;
-
+  justify-content:space-around;
   @media (max-width: 991px) {
     max-width: 100%;
     margin-top: 40px;
+    display:flex;
+    flex-direction:column;
   }
 `;
 
@@ -156,11 +158,15 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   line-height: normal;
-  width: 33%;
   margin-left: 0px;
 
   @media (max-width: 991px) {
-    width: 100%;
+    width: 80%;
+     display: flex;
+     background-color:red;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
   }
 `;
 

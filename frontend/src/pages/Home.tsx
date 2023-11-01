@@ -9,13 +9,13 @@ import Contacts from '../components/Test/Contact'
 import Service from '../components/Test/Services'
 import Pricing from '../components/Test/Pricing'
 import ContactForm from '../components/Test/ContactForm'
-import Header from '../components/Test/Header'
+import Navbar from '../components/Test/Navbar'
 // import UpdatedComponent from '../components/Test/Contact'
 
 function Home() {
   return (
     <>
-    <Header/>
+    <Navbar/>
     <Calendar/>
     <Update/>
     <Contacts/>
