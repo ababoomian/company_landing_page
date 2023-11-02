@@ -4,11 +4,15 @@ import styled from 'styled-components';
 import Update from './Update';
 import Calendar from './Calendar';
 
+interface NavState {
+  isNavOpen: boolean;
+}
+
 const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: #252b42c4;
   padding: 10px 20px;
   color: #fff;
   position: fixed;
@@ -44,7 +48,7 @@ const CenteredContent = styled.div`
   }
 `;
 
-const NavLinks = styled.ul`
+const NavLinks : NavState = styled.ul`
   list-style: none;
   display: flex;
   gap: 20px;
@@ -54,7 +58,7 @@ const NavLinks = styled.ul`
     align-items: center;
     text-align: center;
     margin-top: 20px;
-    display: ${(props) => (props.isNavOpen ? 'block' : 'none')};
+    display: ${(props) => (props.isnavOpen ? 'block' : 'none')};
   }
 `;
 
@@ -106,10 +110,13 @@ import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } f
 import Pricing from './Pricing';
 
 const Navbar: React.FC = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [IsNavOpen, setIsNavOpen] = useState<NavState>({
+    isNavOpen: false,
+  });
 
+  const isOpen = IsNavOpen.isNavOpen;
   const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+    setIsNavOpen({ isNavOpen: !isOpen });
   };
 
   return (
@@ -117,7 +124,7 @@ const Navbar: React.FC = () => {
       <Logo src="/your-logo.png" alt="Logo" />
       <MobileMenuButton onClick={toggleNav}>☰</MobileMenuButton>
       <CenteredContent>
-        <NavLinks isNavOpen={isNavOpen}>
+        <NavLinks isnavOpen={IsNavOpen}>
           <NavLink>
             <a href="/">Home</a>
           </NavLink>
