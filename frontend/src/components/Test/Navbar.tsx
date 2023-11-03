@@ -119,7 +119,7 @@ const Navbar: React.FC = () => {
     setIsNavOpen({ isNavOpen: !isOpen });
   };
 
-  return (
+   return (
     <NavbarContainer>
       <Logo src="/your-logo.png" alt="Logo" />
       <MobileMenuButton onClick={toggleNav}>☰</MobileMenuButton>
