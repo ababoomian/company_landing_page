@@ -64,6 +64,7 @@ const NavLink = styled.li`
     color: #fff;
     transition: color 0.2s ease-in-out, font-size 0.2s ease-in-out;
     position: relative;
+    cursor: pointer;
 
     &:hover {
       color: aqua;

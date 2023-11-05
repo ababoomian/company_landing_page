@@ -17,7 +17,7 @@ export default function Topbar() {
                 <li>Case</li>
             </ul>
           </div>
-          <div class="button_div">
+          <div className="button_div">
             <button>Get Consultration</button>
           </div>
         </div>
