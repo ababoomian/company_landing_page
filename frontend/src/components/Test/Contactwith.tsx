@@ -42,17 +42,17 @@ function ContactForm(props) {
             </Row>
             <Row>
               <Label>Select Subject?</Label>
-              <select name="choose" id="select" style={{border: "solid 1px black", background: "transparent"}}>
+              <StyledSelect name="choose" id="select" style={{border: "solid 1px black"}}>
                 <option value={0}>Select what you want</option>
-                <option value={1}>Game devloping</option>
-                <option value={2}>Web developing</option>
-                <option value={3}>Devops</option>
+                <option value={1}>SoftWare devlopment</option>
+                <option value={2}>Web development</option>
+                <option value={3}>Devops Engineering</option>
 
-              </select>
+              </StyledSelect>
             </Row>
             <Row>
               <Label>Message</Label>
-              <textarea placeholder="Type your questions..." style={{}}></textarea>
+              <textarea rows={10} cols={100}  placeholder="Type your questions..." style={{resize:"none"}}></textarea>
             </Row>
             <SubmitButton>
               <ButtonText>Send Message</ButtonText>
@@ -63,6 +63,24 @@ function ContactForm(props) {
     </Container>
   );
 }
+
+
+const StyledSelect = styled.select`
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  appearance: none; /* Remove the default dropdown arrow */
+  background-color:DodgerBlue;
+  cursor: pointer;
+  z-index:99;
+
+  &:hover {
+    background-color:DodgerBlue;
+     ; /* Add hover effect */
+  }
+`;
 
 const Heading = styled.div`
   color:white;
@@ -160,8 +178,8 @@ const RightColumn = styled.div`
 const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items:stretch;
-  gap:20px;
+  align-items:center;
+  gap:10px;
   width: 595px;
   margin: auto 0;
   @media (max-width: 991px) {

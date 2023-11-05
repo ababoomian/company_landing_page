@@ -15,20 +15,16 @@ function Pricing(props) {
         <Column>
           <PriceCard>
             <PriceTitle>FREE</PriceTitle>
-            <PriceDescription>
-              Organize across all <br /> apps by hand
-            </PriceDescription>
             <PriceAmount>
               <PriceSymbol>$</PriceSymbol>
               <PriceValue>0</PriceValue>
-              <PricePeriod>Per Month</PricePeriod>
+              
             </PriceAmount>
             <PriceFeatures>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
+              <PriceFeature><h1>Consultations</h1></PriceFeature>
+              <PriceFeature>Recommendations for choosing technologies</PriceFeature>
+              <PriceFeature>Competitor analysis</PriceFeature>
+              <PriceFeature>Access to designs</PriceFeature>
             </PriceFeatures>
             <OrderButton>Order Now</OrderButton>
           </PriceCard>
@@ -36,20 +32,17 @@ function Pricing(props) {
         <Column>
           <PriceCard>
             <PriceTitle>STANDARD</PriceTitle>
-            <PriceDescription>
-              Organize across all <br /> apps by hand
-            </PriceDescription>
             <PriceAmount>
               <PriceSymbol>$</PriceSymbol>
-              <PriceValue>10</PriceValue>
-              <PricePeriod>Per Month</PricePeriod>
+              <PriceValue>300</PriceValue>
+              
             </PriceAmount>
             <PriceFeatures>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
+              <PriceFeature><h1>Landing Page</h1></PriceFeature>
+              <PriceFeature>Basic SEO optimization</PriceFeature>
+              <PriceFeature>Feedback form</PriceFeature>
+              <PriceFeature>Image gallery</PriceFeature>
+              <PriceFeature>Social media integration</PriceFeature>
             </PriceFeatures>
             <OrderButton>Order Now</OrderButton>
           </PriceCard>
@@ -57,20 +50,21 @@ function Pricing(props) {
         <Column>
           <PriceCard>
             <PriceTitle>BUSINESS</PriceTitle>
-            <PriceDescription>
-              Organize across all <br /> apps by hand
-            </PriceDescription>
             <PriceAmount>
               <PriceSymbol>$</PriceSymbol>
-              <PriceValue>99</PriceValue>
-              <PricePeriod>Per Month</PricePeriod>
+              <PriceValue>1000</PriceValue>
+            
             </PriceAmount>
             <PriceFeatures>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
-              <PriceFeature>Pricing Feature</PriceFeature>
+              <PriceFeature><h1>Full web development</h1></PriceFeature>
+              <PriceFeature>Complex user interfaces</PriceFeature>
+              <PriceFeature>Scalability</PriceFeature>
+              <PriceFeature>High performance</PriceFeature>
+              <PriceFeature>Data Security</PriceFeature>
+              <PriceFeature>Integration with external systems</PriceFeature>
+              <PriceFeature>Content Management Systems(CMS)</PriceFeature>
+              <PriceFeature>Analytics and monitoring</PriceFeature>
+              <PriceFeature>Technical support and service</PriceFeature>
             </PriceFeatures>
             <OrderButton>Order Now</OrderButton>
           </PriceCard>
@@ -163,7 +157,7 @@ const Column = styled.div`
   @media (max-width: 991px) {
     width: 80%;
      display: flex;
-     background-color:red;
+    //  background-color:red;
     flex-direction: column;
     align-items:center;
     justify-content:center;

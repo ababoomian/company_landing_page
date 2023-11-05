@@ -24,7 +24,7 @@
     "@babel/preset-typescript": "^7.23.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.14.15",
+    "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.15",
     "autoprefixer": "^10.4.16",
     "babel-loader": "^9.1.3",

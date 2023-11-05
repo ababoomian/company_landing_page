@@ -7,8 +7,7 @@ function Calendar() {
       <Content>
         <Title>Features</Title>
         <Description>
-          Most calendars are designed for teams. <br />
-          Slate is designed for freelancers
+        We are a team of information technology experts ready to offer you customized solutions and professional support to optimize your business
         </Description>
       </Content>
       <FeaturesContainer>
