@@ -4,9 +4,11 @@ import Blackform from "./Blackform";
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import Navbar from "./Navbar";
 function ContactForm(props) {
   return (
     <Container>
+      <Navbar />
       <Content>
           <LeftColumn>
             <Heading>
@@ -72,7 +74,6 @@ const StyledSelect = styled.select`
   border-radius: 4px;
   outline: none;
   appearance: none; /* Remove the default dropdown arrow */
-  background-color:DodgerBlue;
   cursor: pointer;
   z-index:99;
 
@@ -113,10 +114,14 @@ const Ft_li = styled.li`
 const Container = styled.div`
   border-radius: 10px;
   box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
-  background-color: #fff;
   align-self: center;
   display: flex;
+  padding: 0 0 0 0;
+  margin-bottom: 5%;
   margin-top: 52px;
+  background-image: url("https://cdn.dribbble.com/users/1604313/screenshots/6905805/contact-illustration.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   /* max-width: 1196px; */
   flex-direction: column;
@@ -129,6 +134,7 @@ const Container = styled.div`
 
 const Content = styled.div`
   display: flex;
+  margin-top: 3%;
   align-self: center;
   width: 100%;
   max-width: 1136px;
@@ -140,7 +146,9 @@ const Content = styled.div`
 const LeftColumn = styled.div`
   border-radius:10px;
   display: flex;
-  background-color:black;
+  border: 1px solid black;
+  opacity: 0.7;
+  background-color: black;
   flex-direction: column;
   line-height: normal;
   width: 45%;
@@ -235,7 +243,7 @@ const ImageIcon = styled.img`
   max-width: 100%;
 `;
 
-const SubmitButton = styled.div`
+const SubmitButton = styled.button`
   align-items: flex-start;
   border-radius: 5px;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.12);
@@ -245,6 +253,7 @@ const SubmitButton = styled.div`
   margin-top: 44px;
   width: 214px;
   max-width: 100%;
+  cursor: pointer;
   flex-grow: 1;
   flex-direction: column;
   padding: 15px 20px;

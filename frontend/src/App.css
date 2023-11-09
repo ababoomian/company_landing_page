@@ -1,6 +1,6 @@
-*{
-  margin: 0 !important;
-  padding: 0 !important;
+body{
+  margin: 0;
+  padding: 0
 }
 html {
 
@@ -30,6 +30,4 @@ html {
   background-color: transparent;
 }  
 
- .App {
-  text-align: center;
-}
+ 
